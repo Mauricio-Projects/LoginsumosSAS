@@ -9,8 +9,8 @@ const Login = () => {
       <div>
         <img src={Logo} alt="logo" />
       </div>
-      <h2 className='m-3 text-center text-3xl font-extrabold text-gray-900'>Inicia Sesión en tu cuenta</h2>
-      <form className='mt-8 max-w-md' action="">
+      <h2 className='m-2 text-center text-3xl font-extrabold text-gray-900'>Inicia Sesión en tu cuenta</h2>
+      <form className='mt-3 max-w-md' action="">
         <div className=''>
           <input className='appeareance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm m-2' 
           type="email" 
@@ -22,7 +22,7 @@ const Login = () => {
           required />
         </div>
         <div className='flex px-2 justify-between font-thin'>
-          <div className='m-2'>
+          <div className='m-2 px-3'>
             <label htmlFor="recuerdame">
               <input type="checkbox" name='recuerdame'/>
               Recuérdame
@@ -42,6 +42,16 @@ const Login = () => {
           </Link>
         </div>
         <div className='text-center'>
+        </div>
+        <div className='flex justify-between font-thin'>
+          <div>
+            No tienes cuenta?
+          </div>
+          <div className='text-blue-500'>
+            <Link to='/registro'>
+              <button>Registrate</button>
+            </Link>
+          </div>
         </div>
           <div class="inline-flex justify-center items-center w-full">
             <hr class="my-4 w-64 h-1 bg-gray-300 rounded border-0 dark:bg-gray-700"/>
